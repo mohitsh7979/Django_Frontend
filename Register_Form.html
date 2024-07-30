@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .container{
+
+            box-shadow: 0px 0px 10px rgb(156, 155, 155);
+            width: 35%;
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 400px;
+            animation: signup 1s linear infinite alternate-reverse;
+            transition: all 2s;
+        }
+
+        input{
+
+            width: 100%;
+            padding: 15px 8px;
+            margin: 8px 0px;
+            border: none;
+            border: 1px solid rgb(5, 172, 5);
+            outline: none;
+            border-radius: 0px 5px 5px 0px;
+            border-left: none;
+      
+        }
+
+        h1{
+            text-align: center;
+            border-bottom: 1px solid rgb(5, 172, 5);
+            color: rgb(5, 172, 5);
+            padding: 5px;
+        }
+
+        form{
+
+            margin: 10px 0px;
+        }
+
+        #btn{
+
+            background-color: rgb(5, 172, 5);
+            border: none;
+            color:white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+
+        .username,.email,.mobile,.password{
+
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-box{
+
+            border: 1px solid rgb(5, 172, 5);
+            padding: 13.5px;
+            background-color: white;
+        }
+
+        .icon-box{
+
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .icon-box i{
+
+            color: black;
+        }
+
+        /* @keyframes signup{
+
+            from{
+                transform: translateX(-100px);
+            }
+            to{
+                transform: translateX(100px);
+            }
+            
+        } */
+
+        #btn:hover{
+
+            transform: translateY(-500px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="cont">
+        <h1>Signup</h1>
+        <form action="">
+            <label for="">Username :</label>
+            <div class="username">
+                <div class="icon-box">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <input type="text" placeholder="Enter Your Username">
+            </div>
+            <label for="">Email :</label>
+            <div class="email">
+                <div class="icon-box">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <label for="">Mobile :</label>
+            <div class="mobile">
+                <div class="icon-box">
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                <input type="number" placeholder="Enter Your Mobile Number">
+            </div>
+            <label for="">Password :</label>
+            <div class="password">
+                <div class="icon-box">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" placeholder="Enter Your Password">
+            </div>
+            <div class="submit">
+                <input type="submit" id="btn">
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+      
+      document.body.onmouseover = function(e){
+           
+        //   console.log(e.clientX)
+        // document.getElementById("cont").style.transform = `translate(${e.clientX}px)`
+
+        // let ans = `translate(${e.clientX})`;
+        // console.log(ans)
+        // console.log(e.clientX,e.clientY)
+
+      }
+
+    </script>
+    
+</body>
+</html>
